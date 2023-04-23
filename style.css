@@ -37,16 +37,16 @@
     display: flex;
 }
 .tasks-list {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 .task-item {
-    list-style:none;
+    list-style: none;
 }
 .task-input, 
 .task-checkbox, 
 .button {
-    outline:none;
+    outline: none;
 }
 .button {
     background: none;
@@ -138,14 +138,14 @@
 
 /* Edit Task */
 .task-item .task-input {
-    display:none
+    display: none
 }
 
 .task-item.edit-mode .task-input {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 .task-item.edit-mode .task-label {
-    display:none;
+    display: none;
 }
