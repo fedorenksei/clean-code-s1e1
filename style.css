@@ -94,7 +94,7 @@
   display: block;
   margin: 0 0 20px;
 }
-#new-task {
+.task__input_new-task {
   width: 318px;
 }
 
@@ -107,9 +107,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.task > * {
-  vertical-align: middle;
 }
 
 .task__checkbox {
@@ -134,21 +131,21 @@
 }
 
 /* Completed */
-#completed-tasks .task__label {
+.task__label_completed {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task .task__input {
+.task__input {
   display: none;
 }
 
-.task.edit-mode .task__input {
+.task__input_edit-mode {
   display: inline-block;
   width: 224px;
 }
 
-.task.edit-mode .task__label {
+.task__label_edit-mode {
   display: none;
 }
