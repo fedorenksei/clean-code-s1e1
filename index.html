@@ -28,7 +28,7 @@
           </label>
           <div class="adding-task__task-row-wrapper">
             <input id="new-task"
-                class="task__input" 
+                class="task__input task__input_new-task task__input_edit-mode" 
                 type="text">
             <button class="task__edit-button">Add</button>
           </div>
@@ -47,12 +47,12 @@
                     alt="delete">
               </button>
             </li>
-            <li class="task edit-mode">
+            <li class="task task_edit-mode">
               <input class="task__checkbox" type="checkbox">
-              <label class="task__label">Go Shopping</label>
+              <label class="task__label task__label_edit-mode">Go Shopping</label>
               <input type="text" 
                   value="Go Shopping" 
-                  class="task__input">
+                  class="task__input task__input_edit-mode">
               <button class="task__edit-button">Save</button>
               <button class="task__delete-button delete-button">
                 <img class="delete-button__img" 
@@ -69,7 +69,7 @@
               <input class="task__checkbox" 
                   type="checkbox" 
                   checked>
-              <label class="task__label">See the Doctor</label>
+              <label class="task__label task__label_completed">See the Doctor</label>
               <input type="text" class="task__input">
               <button class="task__edit-button">Edit</button>
               <button class="task__delete-button delete-button">
