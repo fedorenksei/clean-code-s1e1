@@ -10,10 +10,10 @@
     display: block;
     text-align: right;
 }
-.eisenhower-matrix .eisenhower-matrix-img {
+.eisenhower-matrix__img {
     width: 100%;
 }
-.eisenhower-matrix .more-info {
+.eisenhower-matrix__more-info {
     font-family: fantasy, cursive;
 }
 
@@ -27,28 +27,30 @@
     width: 500px;
     margin: 0 auto 0;
 }
-.task-input,
-.task-label {
+.task__input,
+.task__label {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
-.task-row-wrapper {
+.adding-task__task-row-wrapper {
     display: flex;
 }
 .tasks-list {
     margin: 0;
     padding: 0px;
 }
-.task-item {
+.task {
     list-style: none;
 }
-.task-input, 
-.task-checkbox, 
-.button {
+.task__input, 
+.task__checkbox, 
+.task__edit-button,
+.task__delete-button {
     outline: none;
 }
-.button {
+.task__edit-button,
+.task__delete-button {
     background: none;
     border: 0px;
     color: #888;
@@ -57,7 +59,8 @@
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-.button:hover {
+.task__edit-button:hover,
+.task__delete-button:hover {
     color: #3a3a3a;
 }
 /* Heading */
@@ -70,7 +73,7 @@
     margin: 0;
     text-transform: uppercase;
 }
-.task-input {
+.task__input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -82,12 +85,12 @@
     font-family: Lato, sans-serif;
     color: #888;
 }
-.task-input:focus {
+.task__input:focus {
     color: #333;
 }
 
 /* New Task */
-#adding-task .section-header {
+.adding-task__section-header {
     display: block;
     margin: 0 0 20px;
 }
@@ -96,7 +99,7 @@
 }
 
 /* Task list */
-.task-item {
+.task {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -105,47 +108,47 @@
     justify-content: space-between;
     align-items: center;
 }
-.task-item > * {
+.task > * {
     vertical-align: middle;
 }
 
-.task-item > .task-checkbox {
+.task__checkbox {
     margin: 0 10px;
 }
-.task-item > .task-label {
+.task__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-.task-item >    .task-input {
+.task__input {
     width: 226px;
 }
-.button.delete .delete-button-image {
+.delete-button__image {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.button.delete .delete-button-image:hover {
+.delete-button__image:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .task-label {
+#completed-tasks .task__label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-.task-item .task-input {
+.task .task__input {
     display: none;
 }
 
-.task-item.edit-mode .task-input {
+.task.edit-mode .task__input {
     display: inline-block;
     width: 224px;
 }
 
-.task-item.edit-mode .task-label {
+.task.edit-mode .task__label {
     display: none;
 }
